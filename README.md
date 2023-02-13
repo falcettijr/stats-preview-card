@@ -4,7 +4,7 @@ Essa é uma solução para o desafio "Front End Mentor" [Stats Preview Card on F
 
 ## Índice
 
-- [Visão Geral](#visão-geral)
+
 - [Screenshot](#screenshot)
 - [Links](#links)
 - [Feito com](#Feito-com)
@@ -12,18 +12,14 @@ Essa é uma solução para o desafio "Front End Mentor" [Stats Preview Card on F
 - [Autor](#autor)
 
 
-## Visão Geral
-
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
 ## Screenshot
 
-![Screenshot]()
+![Screenshot](screenshot.png)
 
 ## Links
 
 - Solution URL: [Solução] ()
-- Live Site URL: [Live Site]()
+- Live Site URL: [Live Site](https://falcettijr.github.io/stats-preview-card/)
 
 ## Feito com
 
