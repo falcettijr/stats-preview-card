@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
 :root{
     --background: hsl(233, 47%, 7%) ;
     --cartaoinfo: hsl(244, 38%, 16%);
@@ -15,12 +17,14 @@
     text-decoration: none;
     margin-block: 0;
     line-height: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   body{
     background-color:var(--background);
     padding: 1rem;
     font-size: 1rem;
+    font-family: 'Inter', sans-serif;
   }
 
 main.container{

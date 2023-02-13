@@ -18,7 +18,7 @@ Essa é uma solução para o desafio "Front End Mentor" [Stats Preview Card on F
 
 ## Links
 
-- Solution URL: [Solução] ()
+- Solution URL: [Solução] (https://www.frontendmentor.io/solutions/stats-preview-card--998HSr17e/)
 - Live Site URL: [Live Site](https://falcettijr.github.io/stats-preview-card/)
 
 ## Feito com
