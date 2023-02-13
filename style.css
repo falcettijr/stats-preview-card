@@ -1,0 +1,133 @@
+:root{
+    --background: hsl(233, 47%, 7%) ;
+    --cartaoinfo: hsl(244, 38%, 16%);
+    --imagem: hsl(277, 64%, 61%);
+    --mainhead: hsl(0, 0%, 100%);
+    --mainparag: hsla(0, 0%, 100%, 0.75);
+    --statshead: hsla(0, 0%, 100%, 0.6);
+}
+
+  *,*:before, *:after {inherits;}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-block: 0;
+    line-height: 1.25em;
+  }
+
+  body{
+    background-color:var(--background);
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+main.container{
+  display: flex;
+  max-width: 80rem;
+  margin: 10% auto;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+/*infocard---------------------*/
+
+.infocard{
+  padding: 3rem;
+  background-color: var(--cartaoinfo);
+  border-radius: 10px 0 0 10px;
+}
+
+h1.titleInfocard{
+color: var(--mainhead);
+font-size: 3rem;
+margin-top: 50px;;
+}
+
+span{
+color: var(--imagem);
+}
+
+p.textInfocard{
+color: var(--statshead);
+margin-top: 30px;
+font-size: 1.3rem;
+}
+
+/*imagem---------------------*/
+
+img{
+color: var(--imagem);  
+border-radius: 0 10px 10px 0;
+width: 100%;
+opacity: 0.5;
+}
+
+/*stats---------------------*/
+
+section.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+  text-align: left;
+}
+
+.titleStats{
+font-size: 2rem;
+color: var(--mainhead);
+}
+
+.textStats{
+color: var(--statshead);
+text-transform: uppercase;
+letter-spacing: 0.2em;
+}
+
+.attribution {
+  font-size: 20px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 800px) {
+  .infocard {
+    border-radius: 0 0 10px 10px;
+  }
+
+main.container{
+flex-wrap: wrap-reverse; 
+}
+
+section.container{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: center;
+  margin-top: 20px;
+  }
+.stats{
+  margin: 20px;
+}
+
+h1.titleInfocard{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+p.textInfocard{
+  text-align: center;
+}
+
+img{
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+}
