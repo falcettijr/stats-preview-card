@@ -1,33 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
-:root{
-    --background: hsl(233, 47%, 7%) ;
-    --cartaoinfo: hsl(244, 38%, 16%);
-    --imagem: hsl(277, 64%, 61%);
-    --mainhead: hsl(0, 0%, 100%);
-    --mainparag: hsla(0, 0%, 100%, 0.75);
-    --statshead: hsla(0, 0%, 100%, 0.6);
+:root {
+  --background: hsl(233, 47%, 7%);
+  --cartaoinfo: hsl(244, 38%, 16%);
+  --imagem: hsl(277, 64%, 61%);
+  --mainhead: hsl(0, 0%, 100%);
+  --mainparag: hsla(0, 0%, 100%, 0.75);
+  --statshead: hsla(0, 0%, 100%, 0.6);
 }
 
- 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    margin-block: 0;
-    line-height: 1.25em;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin-block: 0;
+  line-height: 1.25em;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  body{
-    background-color:var(--background);
-    padding: 1rem;
-    font-size: 1rem;
-    font-family: 'Inter', sans-serif;
-  }
+body {
+  background-color: var(--background);
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-main.container{
+main.container {
   display: flex;
   max-width: 80rem;
   margin: 10% auto;
@@ -37,40 +40,46 @@ main.container{
 
 /*infocard---------------------*/
 
-.infocard{
+.infocard {
   padding: 3rem;
   background-color: var(--cartaoinfo);
   border-radius: 10px 0 0 10px;
 }
 
-h1.titleInfocard{
-color: var(--mainhead);
-font-size: 3rem;
-margin-top: 50px;;
+h1.titleInfocard {
+  color: var(--mainhead);
+  font-size: 3rem;
+  margin-top: 50px;
 }
 
-span{
-color: var(--imagem);
+span {
+  color: var(--imagem);
 }
 
-p.textInfocard{
-color: var(--statshead);
-margin-top: 30px;
-font-size: 1.3rem;
+p.textInfocard {
+  color: var(--statshead);
+  margin-top: 30px;
+  font-size: 1.3rem;
 }
 
 /*imagem---------------------*/
 
-img{
-color: var(--imagem);  
-border-radius: 0 10px 10px 0;
+img {
 width: 100%;
-opacity: 0.5;
+height: 100%;
+object-fit: cover;
+mix-blend-mode: multiply;
+opacity: 0.8;
+}
+
+.infoImage{
+  background-color: var(--imagem);
+  width: 100%;
 }
 
 /*stats---------------------*/
 
-section.container{
+section.container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -78,15 +87,15 @@ section.container{
   text-align: left;
 }
 
-.titleStats{
-font-size: 2rem;
-color: var(--mainhead);
+.titleStats {
+  font-size: 2rem;
+  color: var(--mainhead);
 }
 
-.textStats{
-color: var(--statshead);
-text-transform: uppercase;
-letter-spacing: 0.2em;
+.textStats {
+  color: var(--statshead);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .attribution {
@@ -104,33 +113,34 @@ letter-spacing: 0.2em;
     border-radius: 0 0 10px 10px;
   }
 
-main.container{
-flex-wrap: wrap-reverse; 
-}
-
-section.container{
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  text-align: center;
-  margin-top: 20px;
+  main.container {
+    flex-wrap: wrap-reverse;
   }
-.stats{
-  margin: 20px;
-}
 
-h1.titleInfocard{
-  margin-top: 10px;
-  text-align: center;
-  font-size: 2rem;
-}
+  section.container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+  }
 
-p.textInfocard{
-  text-align: center;
-}
+  .stats {
+    margin: 20px;
+  }
 
-img{
-  border-radius: 10px 10px 0 0;
-  width: 100%;
-}
+  h1.titleInfocard {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  p.textInfocard {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+  }
 }
