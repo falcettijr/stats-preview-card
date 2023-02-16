@@ -14,7 +14,7 @@ Essa é uma solução para o desafio "Front End Mentor" [Stats Preview Card on F
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.png#vitrinedev)
 
 ## Links
 
